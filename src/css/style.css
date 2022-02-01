@@ -12,13 +12,10 @@
 
 @import "section.css";
 @import "button.css";
-@import "image.css";
 @import "list.css";
 @import "typography.css";
-/* @import "video.css"; */
-/* @import "hidden.css"; */
+@import "hidden.css";
 
 @import "a11y.css";
-@import "handtalk.css";
 
 @import "custom.css";

@@ -11,48 +11,28 @@
 .headline--size-1 { font-size: 2.75rem }
 .headline--size-2 { font-size: 2.25rem }
 .headline--size-3 { font-size: 2rem }
-.headline--size-4 { font-size: 1.5rem }
-.headline--size-5 { font-size: 1.25rem }
-.headline--size-6 { font-size: 1rem }
 
 @media (--desktop) {
-  .headline--size-1 { font-size: 4rem }
-  .headline--size-2 { font-size: 3rem }
+  .headline--size-1 { font-size: 5.125rem }
+  .headline--size-2 { font-size: 4.625rem }
   .headline--size-3 { font-size: 2.25rem }
-  .headline--size-4 { font-size: 1.75rem }
-  .headline--size-5 { font-size: 1.5rem }
-  .headline--size-6 { font-size: 1.25rem }
-}
-
-
-/* 
- * Subtitle
- */
-
-.subtitle {
-  font-family: inherit;
-  font-size: 1.125rem;
-}
-
-.subtitle--size-1 {
-  font-weight: bold;
-}
-
-.subtitle--size-2 {
-  font-weight: normal;
 }
 
 
 /* 
  * Texts
  */
+ 
+.subtitle {
+  font-size: 1.375rem;
+}
 
 .text-small {
   font-size: 0.875rem;
 }
 
-.text-caption {
-  font-size: 0.75rem;
+.text-lead {
+  font-size: 1.125rem;
 }
 
 .text-bold {
@@ -61,15 +41,4 @@
 
 .text-center {
   text-align: center;
-}
-
-
-/*
- * Overline. 
- */
-
-.overline {
-  font-size: 0.875rem;
-  line-height: 1.5;
-  text-transform: uppercase;
 }

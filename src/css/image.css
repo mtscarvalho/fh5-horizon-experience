@@ -1,7 +1,0 @@
-@media (--phone), (--tablet) {
-  .fill-mobile-container * {
-    min-width: calc(100% + 3rem);
-    position: relative;
-    left: -1.5rem;
-  }
-}

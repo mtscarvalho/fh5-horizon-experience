@@ -6,31 +6,6 @@
   margin-top: .5em;
 }
 
-.list--expansive > * + * {
-  margin-top: 1em;
-}
-
-
-/*
- * Bullet style.
- */
-
-.list--bullet > * {
-  padding-left: 1em;
-}
-
-.list--bullet > *::before {
-  content: "";
-  display: inline-block;
-  background: currentColor;
-  border-radius: 1em;
-  position: absolute;
-  width: .4em;
-  height: .4em;
-  left: 0;
-  top: .6em;
-}
-
 
 /*
  * Checkmark style.
@@ -52,26 +27,5 @@
   height: 1.5em;
   position: absolute;
   top: .1em;
-  left: 0;
-}
-
-
-/*
- * Ordered style.
- */
-
-.list--ordered {
-  counter-reset: counter;
-}
-
-.list--ordered > * {
-  counter-increment: counter;
-  padding-left: 1.25em;
-}
-
-.list--ordered > *::before {
-  content: counter(counter) ". ";
-  font-weight: bold;
-  position: absolute;
   left: 0;
 }

@@ -3,8 +3,7 @@
   position: absolute;
 }
 
-.back-to-top,
-.skip-to-main {
+.back-to-top {
   z-index: 100;
 }
 
@@ -12,10 +11,4 @@
   position: fixed;
   right: 1.5rem;
   bottom: 1.5rem;
-}
-
-.skip-to-main {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
 }

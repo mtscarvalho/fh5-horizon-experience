@@ -14,10 +14,11 @@ body {
 }
 
 body {
-  color: var(--color-blue);
+  background: var(--dark-blue);
+  color: var(--white);
   font-family: sans-serif;
   font-size: 1rem;
-  line-height: 1.75;
+  line-height: 1.5;
 }
 
 img,
