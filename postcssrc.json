@@ -1,0 +1,13 @@
+{
+  "plugins": {
+    "postcss-preset-env": true,
+    "postcss-import": true,
+    "postcss-combine-media-query": true,
+    "postcss-custom-properties": true,
+    "postcss-custom-media": true,
+    "autoprefixer": true,
+    "cssnano": {
+      "preset": "default"
+    }
+  }
+}
