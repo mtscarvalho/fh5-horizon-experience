@@ -16,7 +16,7 @@ body {
 body {
   background: var(--dark-blue);
   color: var(--white);
-  font-family: sans-serif;
+  font-family: "AmsiProCond", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -34,7 +34,7 @@ picture {
 b,
 strong {
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 svg {
