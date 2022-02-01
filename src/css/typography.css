@@ -9,8 +9,8 @@
   text-transform: uppercase;
 }
 
-.headline--size-1 { font-size: 2.75rem }
-.headline--size-2 { font-size: 2.25rem }
+.headline--size-1 { font-size: 3rem }
+.headline--size-2 { font-size: 3rem }
 .headline--size-3 { font-size: 2rem }
 
 @media (--desktop) {
@@ -19,6 +19,19 @@
   .headline--size-3 { font-size: 2.25rem }
 }
 
+.headline--divider::before {
+  content: "";
+  background: var(--orange-gradient);
+  display: block;
+  width: 4.0625rem;
+  height: 0.9375rem;
+  margin-bottom: 0.875rem;
+}
+
+.text-center .headline--divider::before {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* 
  * Texts
@@ -42,4 +55,9 @@
 
 .text-center {
   text-align: center;
+}
+
+.block-center {
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -1,5 +1,46 @@
 /* 
  * ===================================================
- * Section name
+ * SOBRE O PROGRAMA
  * ===================================================
  */
+
+.about-the-program .section {
+  padding-bottom: 2rem;
+}
+
+
+/* 
+ * ===================================================
+ * TUDO QUE VOCÊ PRECISA SABER
+ * ===================================================
+ */
+
+.program-structure {
+  padding-bottom: 4rem;
+}
+
+.program-structure .section {
+  background: url(../assets/jennifer-delle-monache-fh5-nighttimesky.jpg) no-repeat center / cover;
+  padding-bottom: 26rem;
+  z-index: 1;
+}
+
+.program-structure .section::before {
+  content: "";
+  background: linear-gradient(0deg, rgba(13, 12, 28, 0) 0%, #0D0C1C 100%);
+  width: 100%;
+  height: 20.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.program-structure .box {
+  background: var(--cerise);
+  border-radius: .5rem;
+  padding: 5rem;
+  margin-top: -14rem;
+  position: relative;
+  z-index: 1;
+}

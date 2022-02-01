@@ -1,5 +1,5 @@
 .grid {
-  --gap: 4rem;
+  --gap: 4rem 6rem;
   --align: center;
 
   display: grid;
