@@ -16,7 +16,7 @@ body {
 body {
   background: var(--dark-blue);
   color: var(--white);
-  font-family: "AmsiProCond", sans-serif;
+  font-family: "AmsiPro", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 }

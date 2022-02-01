@@ -8,18 +8,18 @@
 }
 
 @font-face {
-  font-family: "AmsiProCond";
-  src: url("../fonts/amsiprocond-bold.woff2") format("woff2"),
-       url("../fonts/amsiprocond-bold.woff") format("woff");
+  font-family: "AmsiPro";
+  src: url("../fonts/amsipro-bold.woff2") format("woff2"),
+       url("../fonts/amsipro-bold.woff") format("woff");
   font-display: swap;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 @font-face {
-  font-family: "AmsiProCond";
-  src: url("../fonts/amsiprocond-regular.woff2") format("woff2"),
-       url("../fonts/amsiprocond-regular.woff") format("woff");
+  font-family: "AmsiPro";
+  src: url("../fonts/amsipro-regular.woff2") format("woff2"),
+       url("../fonts/amsipro-regular.woff") format("woff");
   font-display: swap;
   font-style: normal;
   font-weight: normal;
