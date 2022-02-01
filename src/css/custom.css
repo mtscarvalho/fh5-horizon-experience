@@ -44,3 +44,84 @@
   position: relative;
   z-index: 1;
 }
+
+/* 
+ * ===================================================
+ * ETAPAS DO PROCESSO SELETIVO
+ * ===================================================
+ */
+
+.selective-process .section {
+  background: url(../assets/horizon-map.jpg) no-repeat center / cover;
+  z-index: 1;
+}
+
+.selective-process .section::before {
+  content: "";
+  background: var(--black);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: .8;
+}
+
+.selective-process ol {
+  counter-reset: counter;
+}
+
+.selective-process ol > * {
+  counter-increment: counter;
+  padding-left: 1.25em;
+}
+
+.selective-process ol > *::before {
+  --size: 3.5rem;
+
+  background: var(--cerise);
+  border-radius: 100%;
+  content: counter(counter);
+  display: block;
+  width: var(--size);
+  height: var(--size);
+  font-family: "AmsiProCond", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: var(--size);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* 
+ * ===================================================
+ * CALL TO ACTION
+ * ===================================================
+ */
+
+.cta .section {
+  background: var(--orange-gradient);
+  z-index: 1;
+}
+
+.cta .section::before {
+  content: "";
+  background: url(../assets/pinata-mascot.jpg) no-repeat center / cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  mix-blend-mode: lighten;
+  opacity: .5;
+}
+
+.cta .headline--divider::before {
+  background: var(--yellow);
+}
+
+@media (--desktop) {
+  .cta .section {
+    padding: 10rem 1.5rem;
+  }
+}
