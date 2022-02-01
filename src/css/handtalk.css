@@ -1,0 +1,34 @@
+.handtalk-handler {
+  background: #003087;
+  border-radius: 12px 0px 0px 12px;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  padding: 0px;
+  position: fixed;
+  top: 20vh;
+  right: 0;
+  z-index: 100;
+}
+
+.handtalk-handler > svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+/* Override default position */
+.ht-skip > div { top: 20vh }
+.ht-skip > div > div { margin-top: 0 }
+
+/* Add cursor pointer to widget button  */
+.ht-skip > div > div,
+.ht-skip > div > div > button {
+  cursor: pointer;
+}

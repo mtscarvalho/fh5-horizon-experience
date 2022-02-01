@@ -1,0 +1,11 @@
+.content > * + * {
+  margin-top: var(--margin);
+}
+
+.content--compact > * + * {
+  margin-top: var(--margin);
+}
+
+.content--expansive > * + * {
+  margin-top: var(--margin);
+}

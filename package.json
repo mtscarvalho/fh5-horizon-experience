@@ -1,0 +1,25 @@
+{
+  "name": "parceljs",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/*.html --no-cache",
+    "build": "parcel build --public-url . src/*.html"
+  },
+  "browserslist": "> 0.5%, last 2 versions",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.2.1",
+    "@parcel/transformer-jsonld": "^2.2.1",
+    "@parcel/transformer-webmanifest": "^2.2.1",
+    "parcel": "^2.2.1",
+    "postcss": "^8.4.5",
+    "postcss-combine-media-query": "^1.0.1",
+    "postcss-custom-media": "^8.0.0",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^7.2.3",
+    "sharp": "^0.29.3"
+  }
+}

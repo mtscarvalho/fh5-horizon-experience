@@ -1,0 +1,11 @@
+.stack {
+  --gap: 2.5rem;
+
+  display: grid;
+  gap: var(--gap);
+  grid-auto-rows: auto;
+}
+
+.stack--expansive {
+  --gap: 4rem;
+}

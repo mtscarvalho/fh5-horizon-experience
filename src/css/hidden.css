@@ -1,0 +1,11 @@
+@media (--phone), (--tablet) {
+  .hide-at-mobile {
+    display: none;
+  }
+}
+
+@media (--desktop) {
+  .hide-at-desktop {
+    display: none;
+  }
+}

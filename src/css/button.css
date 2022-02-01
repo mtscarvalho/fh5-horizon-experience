@@ -1,0 +1,16 @@
+.button {
+  color: inherit;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: .75em 1.5em; 
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background .3s ease-in-out, color .3s ease-in-out;
+}
+
+.button--black {
+  background: var(--color-black);
+  color: var(--color-white);
+}

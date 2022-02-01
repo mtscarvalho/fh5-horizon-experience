@@ -1,0 +1,12 @@
+:root {
+  --color-blue: #003D72;
+  --color-secondary: #041E42;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+}
+
+@custom-media --xsmall-phone (width < 20rem);
+@custom-media --small-phone (width < 32.5rem);
+@custom-media --phone (width < 48rem);
+@custom-media --tablet (48rem <= width < 65.5rem);
+@custom-media --desktop (width >= 65.5rem);

@@ -1,0 +1,11 @@
+.container {
+  max-width: 73.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.container--tick    { max-width: 81.25rem }
+.container--narrow  { max-width: 60rem }
+.container--compact { max-width: 40.625rem }
+.container--thin    { max-width: 33.4375rem }

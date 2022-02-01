@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--color-blue);
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+img,
+picture {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+b,
+strong {
+  font-family: inherit;
+  font-weight: bold;
+}
+
+svg {
+  width: 100%;
+  vertical-align: middle;
+}
+
+video {
+  width: auto;
+  height: auto;
+}
