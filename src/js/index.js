@@ -1,4 +1,21 @@
 /**
+ * Video lazy loading
+ */
+
+const startVideoOnViewport = () => {
+  const videos = document.querySelectorAll('[data-video-lazy]');  
+  
+  videos.forEach(video => {
+    const halfWindow = window.innerHeight * 1;
+    const isSectionVisible = (video.getBoundingClientRect().bottom - halfWindow) < 0.5;
+    if (isSectionVisible) video.play();
+  });  
+}
+
+window.addEventListener('scroll', startVideoOnViewport);
+
+
+/**
  * Accordion
  */
 
