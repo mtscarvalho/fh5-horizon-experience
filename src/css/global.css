@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:focus {
+  outline: 4px dotted var(--cerise);
+  outline-offset: 2px;
+}
+
 html {
   scroll-behavior: smooth;
 }
