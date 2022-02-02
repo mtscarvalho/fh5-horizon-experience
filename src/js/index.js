@@ -1,5 +1,18 @@
 /**
- * Video lazy loading
+ * GSAP Animation
+ */
+
+gsap.set(".hero-bg", {scale: 1, y: 0});
+gsap.to(".hero-bg", {scale: 2, y: 0, scrollTrigger: {
+  trigger: ".hero-bg",
+  pin: ".hero-bg",
+  scrub: true
+}})
+
+
+
+/**
+ * Video Lazy Loading
  */
 
 const startVideoOnViewport = () => {

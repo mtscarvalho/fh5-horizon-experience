@@ -36,6 +36,27 @@
 <body class="body" id="body">
 
 	<main class="main" id="main">
+		<section class="hero">
+			<div class="container">
+				<div class="grid">
+					<div class="content">
+						<h1 class="visually-hidden">Programa de contratação e seleção para a equipe do Forza Horizon 5</h1>
+						<h2 class="headline headline--size-1 headline--divider">Está preparado para uma nova jornada?</h2>
+						<p class="text-lead">Programa de capacitação e seleção para lorem ipsum dolor sit amet.</p>
+						<a class="button button--forza-gradient" href="">Inscreva-se agora</a>
+						<picture class="hero-bg">
+							<img src="./assets/hero-mountains.jpg" alt="...">
+						</picture>
+						<picture class="hero-image">
+							<img src="./assets/pioneer-dusk.png" alt="...">
+						</picture>
+						<div class="hero-divider"></div>
+					</div>
+					<div class="content"></div>
+				</div>
+			</div>
+		</section>
+
 		<section class="about-the-program">
 			<div class="section">
 				<div class="container">
@@ -52,9 +73,11 @@
 							</div>
 						</div>
 						<div class="content" style="--column: span 5">
-							<picture>
-								<img src="./assets/people-playing-forza-horizon-5.jpg" alt="...">
-							</picture>
+							<div class="video">
+								<video muted loop playsinline="playsinline" poster="./assets/people-playing-forza-horizon-5.jpg" data-video-lazy>
+									<source src="./assets/playground-games.mp4" type="video/mp4" />
+								</video>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -175,5 +198,9 @@
 	<a href="#body" class="button button--black back-to-top visually-hidden">Voltar ao topo</a>
 
 	<script defer type="module" src="./js/index.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+
 </body>
 </html>
