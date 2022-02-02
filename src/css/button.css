@@ -1,16 +1,27 @@
 .button {
   color: inherit;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: bold;
   line-height: 1.2;
-  padding: .75em 1.5em; 
+  padding: .8em 1.75em; 
   text-decoration: none;
   text-transform: uppercase;
   transition: background .3s ease-in-out, color .3s ease-in-out;
+  clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
 }
 
-.button--black {
-  background: var(--color-black);
-  color: var(--color-white);
+.button--white {
+  background: var(--white);
+  color: var(--dark-blue);
+}
+
+.button--white:hover {
+  background: var(--yellow);
+  color: var(--dark-blue);
+}
+
+.button--forza-gradient {
+  background: var(--forza-gradient);
+  color: var(--white);
 }
