@@ -3,8 +3,9 @@
   --dark-blue: #0D0C1C;
   --cerise: #E83382;
   --yellow: #FEDD3A;
-  --white:  #FFFFFF;
-  --orange-gradient: linear-gradient(90deg, #FF5D00 0%, #FF00B3 112.30%);
+  --white: #FFFFFF;
+  --grey: #C8C9C7;
+  --forza-gradient: linear-gradient(90deg, #FF5D00 0%, #FF00B3 112.30%);
 }
 
 @custom-media --phone (width < 48rem);

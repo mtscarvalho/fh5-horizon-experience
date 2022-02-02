@@ -21,7 +21,7 @@
 
 .headline--divider::before {
   content: "";
-  background: var(--orange-gradient);
+  background: var(--forza-gradient);
   display: block;
   width: 4.0625rem;
   height: 0.9375rem;
