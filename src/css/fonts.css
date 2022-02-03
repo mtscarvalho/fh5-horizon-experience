@@ -9,11 +9,11 @@
 
 @font-face {
   font-family: "AmsiPro";
-  src: url("../fonts/amsipro-bold.woff2") format("woff2"),
-       url("../fonts/amsipro-bold.woff") format("woff");
+  src: url('../fonts/amsipro-black.woff2') format('woff2'),
+       url('../fonts/amsipro-black.woff') format('woff');
   font-display: swap;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 @font-face {
