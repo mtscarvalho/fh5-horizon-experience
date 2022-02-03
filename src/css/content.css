@@ -1,5 +1,5 @@
 .content { --margin: 1.5rem }
-.content--compact  { --margin: 1rem }
+.content--compact  { --margin: .75rem }
 
 .content > * + * {
   margin-top: var(--margin);

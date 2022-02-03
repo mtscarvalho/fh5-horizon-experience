@@ -5,23 +5,41 @@
  */
 
 .hero {
-  padding: 4rem 1.5rem;
-  display: grid;
-  align-content: center;
-  height: 100vh;
-  position: relative;
+  height: 900px;
   margin-bottom: -1px;
+  overflow: hidden;
+  padding: 2rem 1.5rem 0;
+  position: relative;
 }
 
-.hero-bg *,
-.hero-image * {
+.hero::after {
+  content: "";
+  background: linear-gradient(90deg, black 0%, transparent 100%);
+  width: 150%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: .8;
+  z-index: -1;
+}
+
+.hero .logo {
+  max-width: 300px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero .background * {
   position: absolute;
   width: 100%;
   height: 100%;
+  left: 0;
+  right: 0;
   object-fit: cover;
 }
 
-.hero-bg {
+.hero .background {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -30,15 +48,60 @@
   z-index: -2;
 }
 
-.hero-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  inset: 0;
-  z-index: -1;
+.hero .foreground {
+  min-width: calc(100% + 3rem);
+  left: -1.5rem;
+  position: relative;
 }
 
+.hero .divider {
+  background: url(../assets/grass.svg) repeat-x center / auto 100%;
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@media (--desktop) {
+  .hero {
+    display: grid;
+    align-content: center;
+    height: 100vh;
+    min-height: 47.5rem;
+    padding: 4rem 1.5rem;
+  }
+
+  .hero::after {
+    width: 75%;
+  }
+
+  .hero .logo {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+  }
+
+  .hero .foreground {
+    position: absolute;
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    inset: 0;
+    z-index: -1;
+  }
+
+  .hero .foreground * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+  }
+}
 
 /* 
  * ===================================================
@@ -62,6 +125,7 @@
 }
 
 .about-the-program .video > * {
+  border-radius: .25rem;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -78,7 +142,9 @@
  */
 
 .program-structure {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .program-structure .section {
@@ -87,16 +153,20 @@
   z-index: 1;
 }
 
-.program-structure .section::before {
+.program-structure .section::before,
+.program-structure .section::after {
   content: "";
   background: linear-gradient(0deg, rgba(13, 12, 28, 0) 0%, #0D0C1C 100%);
   width: 100%;
   height: 20.5rem;
   position: absolute;
-  top: 0;
   left: 0;
+  right: 0;
   z-index: -1;
 }
+
+.program-structure .section::before { top: 0 }
+.program-structure .section::after  { bottom: 0; transform: rotate(180deg) }
 
 .program-structure .box {
   background: var(--cerise);
@@ -118,15 +188,29 @@
   z-index: 1;
 }
 
-.selective-process .section::before {
+.selective-process .section::before,
+.selective-process .section::after {
   content: "";
-  background: var(--black);
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.selective-process .section::before {
+  background: var(--dark-blue);
   height: 100%;
   position: absolute;
-  inset: 0;
-  z-index: -1;
-  opacity: .8;
+  opacity: .9;
+}
+
+.selective-process .section::after {
+  background: linear-gradient(0deg, rgba(13, 12, 28, 0) 0%, #0D0C1C 100%);
+  height: 20.5rem;
+  position: absolute;
+  top: 0;
 }
 
 .selective-process ol {
@@ -152,6 +236,12 @@
   line-height: var(--size);
   margin-bottom: 1rem;
   text-align: center;
+}
+
+@media (--desktop) {
+  .selective-process .section {
+    padding: 10rem 1.5rem 15rem;
+  }
 }
 
 @media (--phone) {

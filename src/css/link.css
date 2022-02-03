@@ -1,0 +1,17 @@
+.link {
+  font-size: 1.125rem;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (--phone) {
+  .link {
+    display: block;
+  }
+}
+
+.button + .link {
+  margin: 1em;
+}

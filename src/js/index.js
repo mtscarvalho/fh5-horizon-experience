@@ -2,13 +2,22 @@
  * GSAP Animation
  */
 
-gsap.set(".hero-bg", {scale: 1, y: 0});
-gsap.to(".hero-bg", {scale: 2, y: 0, scrollTrigger: {
-  trigger: ".hero-bg",
-  pin: ".hero-bg",
+gsap.set("#hero-background", {scale: 1, y: 0});
+gsap.to("#hero-background", {scale: 1.5, y: 0, scrollTrigger: {
+  trigger: "#hero-background",
+  pin: "#hero-background",
   scrub: true
 }})
 
+gsap.to("#hero-content", {
+  yPercent: -50,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".hero",
+    start: "center bottom",
+    scrub: true
+  }, 
+});
 
 
 /**
