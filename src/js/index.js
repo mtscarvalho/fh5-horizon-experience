@@ -35,7 +35,7 @@ gsap.from("[data-number]", {
   },
   scrollTrigger: {
     trigger: ".about-the-program",
-    start: "center bottom",
+    start: "30rem center",
   },
   stagger: {
     each: 1.0,
