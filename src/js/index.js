@@ -19,6 +19,24 @@ gsap.to("#hero-content", {
   }, 
 });
 
+gsap.from("[data-number]", {
+  textContent: 0,
+  duration: 2,
+  snap: {
+    textContent: 1
+  },
+  scrollTrigger: {
+    trigger: ".about-the-program",
+    start: "center bottom",
+  },
+  stagger: {
+    each: 1.0,
+    onUpdate: function() {
+      this.targets()[0].innerHTML = this.targets()[0].textContent;
+    },
+  }
+});
+
 
 /**
  * Video Lazy Loading
