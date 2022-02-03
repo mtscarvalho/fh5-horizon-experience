@@ -77,7 +77,7 @@
 }
 
 [aria-expanded="true"].accordion-button::before {
-  background-image: url(../assets/dash.svg);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M8.38,6.71a.71.71,0,0,0,0-1.42H3.62a.71.71,0,0,0,0,1.42Z' style='fill: %23fff'/%3E%3C/svg%3E%0A");
 }
 
 [aria-expanded="true"].accordion-button:hover,
@@ -101,7 +101,7 @@
 }
 
 [aria-expanded="false"].accordion-button::before {
-  background-image: url(../assets/plus.svg);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M8.38,5.29H6.71V3.62a.71.71,0,0,0-1.42,0V5.29H3.62a.71.71,0,0,0,0,1.42H5.29V8.38a.71.71,0,0,0,1.42,0V6.71H8.38a.71.71,0,0,0,0-1.42Z' style='fill: %23fff'/%3E%3C/svg%3E%0A");
 }
 
 [aria-expanded="false"].accordion-button + .accordion-content {

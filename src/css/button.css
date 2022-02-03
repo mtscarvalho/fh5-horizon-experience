@@ -1,7 +1,7 @@
 .button {
   color: inherit;
   display: inline-block;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 900;
   line-height: 1.2;
   padding: .8em 1.75em; 
@@ -9,6 +9,10 @@
   text-transform: uppercase;
   transition: background .3s ease-in-out, color .3s ease-in-out;
   clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
+}
+
+.button--large {
+  font-size: 1.125rem;
 }
 
 .button--white {

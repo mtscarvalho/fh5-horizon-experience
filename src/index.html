@@ -39,7 +39,7 @@
 		<section class="hero">
 			<div class="container">
 				<div class="grid">
-					<div class="content">
+					<div class="content" style="max-width: 50ch;">
 						<figure class="text-center">
 							<svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 76.05" role="img" aria-label="Logo Forza Horizon 5 e Playground Games">
 								<defs>
@@ -101,20 +101,21 @@
 						<div class="content" id="hero-content">
 							<h2 class="headline headline--size-1 headline--divider">Está preparado para uma nova jornada?</h2>
 							<p class="text-lead">Programa de capacitação e seleção para lorem ipsum dolor sit amet.</p>
-							<a class="button button--forza-gradient" href="">Inscreva-se agora</a>
-							<a class="link" href="">Saiba mais</a>
+							<a class="button button--forza-gradient button--large" href="https://www.gama.academy/empresas" target="_blank" rel="noopener">Inscreva-se agora</a>
+							<a class="link" href="#about-the-program">Saiba mais</a>
 						</div>
 						<picture class="background" id="hero-background">
-							<img src="./assets/mountain-ridges-under-a-blue-mist.jpg" alt="...">
+							<img src="./assets/mountain-ridges-under-a-blue-mist.jpg" alt="Montanhas azuis">
 						</picture>
 						<picture class="foreground" id="hero-foreground">
-							<source media="(min-width: 768px)" srcset="./assets/pioneer-dusk.png">
-							<source media="(max-width: 767px)" srcset="./assets/pioneer-dusk-768px.png">
-							<img src="./assets/pioneer-dusk.png" alt="...">
+							<source media="(min-width: 768px)" srcset="./assets/pioneer-dusk.png?as=webp" type="image/webp">
+							<source media="(min-width: 768px)" srcset="./assets/pioneer-dusk.png" type="image/png">
+							<source media="(min-width: 768px)" srcset="./assets/pioneer-dusk-768px.png?as=webp" type="image/webp">
+							<source media="(min-width: 768px)" srcset="./assets/pioneer-dusk-768px.png" type="image/png">
+							<img src="./assets/pioneer-dusk.png" alt="Personagem do Forza Horizon ao lado de um off-road olhando para a montanho">
 						</picture>
 						<div class="divider" id="hero-divider"></div>
 					</div>
-					<div class="content"></div>
 				</div>
 			</div>
 		</section>
@@ -122,31 +123,51 @@
 		<section class="about-the-program" id="about-the-program">
 			<div class="section">
 				<div class="container">
-					<div class="grid grid--reverse" style="--column: span 4">
-						<div class="stack">
-							<div class="content">					
-								<h2 class="headline headline--size-2 headline--divider">Sobre o programa</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+					<div class="stack stack--expansive">
+						<div class="grid grid--reverse" style="--column: span 4">
+							<div class="stack">
+								<div class="content">					
+									<h2 class="headline headline--size-2 headline--divider">Sobre o programa</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+								</div>
+								<div class="content">
+									<svg viewBox="0 0 169 38" focusable="false" role="img" aria-label="Logo Gama Academy" style="max-width: 10.625rem;">
+										<use xlink:href="./assets/gama-academy.svg#root"></use>
+									</svg>
+								</div>
 							</div>
-							<div class="content">
-								<svg viewBox="0 0 169 38" focusable="false" role="img" aria-label="Logo Gama Academy" style="max-width: 10.625rem;">
-									<use xlink:href="./assets/gama-academy.svg#root"></use>
-								</svg>
+							<div class="content" style="--column: span 5">
+								<div class="video">
+									<video muted loop playsinline="playsinline" poster="./assets/people-playing-forza-horizon-5.jpg" data-video-lazy>
+										<source src="./assets/playground-games.mp4" type="video/mp4" />
+									</video>
+								</div>
 							</div>
 						</div>
-						<div class="content" style="--column: span 5">
-							<div class="video">
-								<video muted loop playsinline="playsinline" poster="./assets/people-playing-forza-horizon-5.jpg" data-video-lazy>
-									<source src="./assets/playground-games.mp4" type="video/mp4" />
-								</video>
-							</div>
-						</div>
+						<ul class="columns" style="--columns-desktop: 4; --columns-tablet: 2">
+							<li class="content content--compact text-center">
+								<span class="scoreboard headline">10</span>
+								<p>Candidatos serão efetivados  pela produtora Playground Games no final do programa</p>
+							</li>
+							<li class="content content--compact text-center">
+								<span class="scoreboard headline">100h</span>
+								<p>Treinamento das tecnologias utilizadas para a construção do jogo Forza Horizon 5</p>
+							</li>
+							<li class="content content--compact text-center">
+								<span class="scoreboard headline">+300</span>
+								<p>Vagas abertas para a inscrição do programa</p>
+							</li>
+							<li class="content content--compact text-center">
+								<span class="scoreboard headline">100%</span>
+								<p>Remoto e gratuito. Desde a incrição até a efetivação</p>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="program-structure">
+		<section class="program-structure" id="program-structure">
 			<div class="section">
 				<div class="container">
 					<div class="content text-center block-center" style="max-width: 50ch;">
@@ -157,33 +178,67 @@
 			<div class="container container--narrow">
 				<div class="box">
 					<div class="grid">
-						<div class="content">
+						<div class="content requirements">
 							<h3 class="headline headline--size-3">Pré-requisitos</h3>
-							<ul class="stack">
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+							<ul class="content">
+								<li>
+									<svg viewBox="0 0 68 68" focusable="false" aria-hidden="true">
+										<use xlink:href="./assets/icon-read.svg#root"></use>
+									</svg>
+									<div class="stack" style="--gap: .25rem">
+										<h4 class="text-bold">Formação</h4>
+										<p class="text-small">Ter concluído ou estar cursando o último ano da graduação de TI, audiovisual ou games.</p>
+									</div>
+								</li>
+								<li>
+									<svg viewBox="0 0 68 68" focusable="false" aria-hidden="true">
+										<use xlink:href="./assets/icon-message.svg#root"></use>
+									</svg>
+									<div class="stack" style="--gap: .25rem">
+										<h4 class="text-bold">Idioma</h4>
+										<p class="text-small">Inglês avançado.</p>
+									</div>
+								</li>
+								<li>
+									<svg viewBox="0 0 68 68" focusable="false" aria-hidden="true">
+										<use xlink:href="./assets/icon-code.svg#root"></use>
+									</svg>
+									<div class="stack" style="--gap: .25rem">
+										<h4 class="text-bold">Conhecimentos</h4>
+										<p class="text-small">Domínio avançado na Unreal Engine 4 e modelagem 3D.</p>
+									</div>
+								</li>
+								<li>
+									<svg viewBox="0 0 68 68" focusable="false" aria-hidden="true">
+										<use xlink:href="./assets/icon-schedule.svg#root"></use>
+									</svg>
+									<div class="stack" style="--gap: .25rem">
+										<h4 class="text-bold">Disponibilidade</h4>
+										<p class="text-small">40h semanais com horários flexíveis, devido ao fuso horário.</p>
+									</div>
+								</li>
 							</ul>
 						</div>
-						<div class="content">
+						<div class="content benefits">
 							<h3 class="headline headline--size-3">Benefícios</h3>
-							<ul class="stack">
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+							<ul class="list list--checkmark">
+								<li>100% online e gratuito</li>
+								<li>Aprendizado de novas tecnologias e utilização prática dos conhecimentos.</li>
+								<li>Comunidade no Discord com todos os participantes</li>
+								<li>Possibilidade de contratação pela Playground Games</li>
+								<li>Onboarding customizado, buddies e mentores no início da jornada como funcionário</li>
 							</ul>
+							<a class="button button--white" href="https://www.gama.academy/empresas" target="_blank" rel="noopener">Inscreva-se agora</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="selective-process">
+		<section class="selective-process" id="selective-process">
 			<div class="section">
 				<div class="container">
-					<div class="grid">
+					<div class="grid" style="--align: flex-start">
 						<div class="content" style="--column: span 3">
 							<h2 class="headline headline--size-2 headline--divider">Etapas do processo seletivo</h2>
 						</div>
@@ -207,7 +262,7 @@
 			</div>
 		</section>
 
-		<section class="cta">
+		<section class="cta" id="cta">
 			<div class="section">
 				<div class="container">
 					<div class="grid">
@@ -221,7 +276,7 @@
 			</div>
 		</section>
 
-		<section class="faq">
+		<section class="faq" id="faq">
 			<div class="section">
 				<div class="container container--narrow">
 					<div class="stack">
@@ -266,7 +321,7 @@
 		</div>
 	</footer>
 
-	<a href="#body" class="button button--black back-to-top visually-hidden">Voltar ao topo</a>
+	<a href="#body" class="button button--forza-gradient back-to-top visually-hidden">Voltar ao topo</a>
 
 	<script defer type="module" src="./js/index.js"></script>
 
