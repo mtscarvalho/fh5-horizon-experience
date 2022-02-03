@@ -1,5 +1,5 @@
 import './gsap.min.js';
-import './scrollTrigger.min.js';
+import './ScrollTrigger.min.js';
 
 /**
  * GSAP Animation
