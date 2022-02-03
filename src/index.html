@@ -39,7 +39,7 @@
 		<section class="hero">
 			<div class="container">
 				<div class="grid">
-					<div class="content" style="max-width: 50ch;">
+					<div class="stack" style="max-width: 50ch;">
 						<figure class="text-center">
 							<svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 76.05" role="img" aria-label="Logo Forza Horizon 5 e Playground Games">
 								<defs>
@@ -110,8 +110,8 @@
 						<picture class="foreground" id="hero-foreground">
 							<source media="(min-width: 768px)" srcset="./assets/pioneer-dusk.png?as=webp" type="image/webp">
 							<source media="(min-width: 768px)" srcset="./assets/pioneer-dusk.png" type="image/png">
-							<source media="(min-width: 768px)" srcset="./assets/pioneer-dusk-768px.png?as=webp" type="image/webp">
-							<source media="(min-width: 768px)" srcset="./assets/pioneer-dusk-768px.png" type="image/png">
+							<source media="(max-width: 767px)" srcset="./assets/pioneer-dusk-768px.png?as=webp" type="image/webp">
+							<source media="(max-width: 767px)" srcset="./assets/pioneer-dusk-768px.png" type="image/png">
 							<img src="./assets/pioneer-dusk.png" alt="Personagem do Forza Horizon ao lado de um off-road olhando para a montanho">
 						</picture>
 						<div class="divider" id="hero-divider"></div>
@@ -323,8 +323,7 @@
 
 	<a href="#body" class="button button--forza-gradient back-to-top visually-hidden">Voltar ao topo</a>
 
-	<script defer type="module" src="./js/index.js"></script>
-
+	<script type="module" src="./js/index.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 
