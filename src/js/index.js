@@ -9,15 +9,19 @@ gsap.to("#hero-background", {scale: 1.5, y: 0, scrollTrigger: {
   scrub: true
 }})
 
-gsap.to("#hero-content", {
-  yPercent: -50,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".hero",
-    start: "center bottom",
-    scrub: true
-  }, 
-});
+ScrollTrigger.matchMedia({
+  "(min-width: 1048px)": function() {
+    gsap.to("#hero-content", {
+      yPercent: -50,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".hero",
+        start: "center bottom",
+        scrub: true
+      }, 
+    });
+  },
+})
 
 gsap.from("[data-number]", {
   textContent: 0,
