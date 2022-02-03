@@ -3,11 +3,15 @@
  */
 
 gsap.set("#hero-background", {scale: 1, y: 0});
-gsap.to("#hero-background", {scale: 1.5, y: 0, scrollTrigger: {
-  trigger: "#hero-background",
-  pin: "#hero-background",
-  scrub: true
-}})
+gsap.to("#hero-background", {
+  scale: 1.5,
+  y: 0,
+  scrollTrigger: {
+    trigger: "#hero-background",
+    pin: "#hero-background",
+    scrub: true
+  }
+})
 
 ScrollTrigger.matchMedia({
   "(min-width: 1048px)": function() {
@@ -40,6 +44,20 @@ gsap.from("[data-number]", {
     },
   }
 });
+
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".selective-process",
+    start: "center bottom"
+  }
+});
+
+gsap.set(".teste", {opacity: 0});
+tl.to(".teste-1", {opacity: 1})
+  .to(".teste-2", {opacity: 1})
+  .to(".teste-3", {opacity: 1})
+  .to(".teste-4", {opacity: 1})
+
 
 
 /**
