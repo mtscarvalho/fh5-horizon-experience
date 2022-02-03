@@ -32,6 +32,10 @@
   z-index: 4;
 }
 
+.hero .content {
+  max-width: 32rem;  
+}
+
 .hero .logo {
   max-width: 300px;
   margin: 0 auto 1.5rem;
@@ -79,7 +83,7 @@
     align-content: center;
     height: 100vh;
     min-height: 47.5rem;
-    padding: 4rem 1.5rem;
+    padding: 10rem 1.5rem 4rem;
   }
 
   .hero::after {
@@ -111,6 +115,10 @@
     left: 0;
     right: 0;
     object-fit: cover;
+  }
+
+  .hero .divider {
+    height: 20vh;
   }
 }
 
@@ -177,6 +185,7 @@
 }
 
 .about-the-program .video {
+  background: url(../assets/playground-games.jpg) no-repeat center / cover;
   width: 100%;
   padding-top: 80%;
   height: 0px;
