@@ -6,7 +6,6 @@
 
 .hero {
   background: #84A1CD;
-  height: 900px;
   margin-bottom: -1px;
   overflow: hidden;
   padding: 2rem 1.5rem 0;
@@ -63,7 +62,6 @@
   min-width: calc(100% + 3rem);
   left: -1.5rem;
   position: relative;
-  margin-top: -3rem;
   z-index: 3;
 }
 
@@ -235,10 +233,32 @@
 .program-structure .section::after  { bottom: 0; transform: rotate(180deg) }
 
 .program-structure .box {
-  background: var(--cerise);
-  padding: 6rem 1.5rem;
+  background: var(--forza-gradient);
+  padding: 6rem 5rem;
   position: relative;
   z-index: 1;
+}
+
+.program-structure .box::after {
+  content: "";
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+  border: 4px solid white;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+@media (--phone) {
+  .program-structure .box {
+    padding: 6rem 4rem;
+  }
+  .program-structure .box::after {
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+    top: 1.5rem;
+    left: 1.5rem;
+  }
 }
 
 .program-structure .requirements li {
@@ -264,7 +284,7 @@
   .program-structure .box {
     border-radius: .5rem;
     margin-top: -14rem;
-    padding: 5rem;
+    padding: 6rem;
   }
 
   .program-structure .requirements svg {
