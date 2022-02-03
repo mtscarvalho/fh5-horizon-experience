@@ -222,7 +222,7 @@
   z-index: -1;
 }
 
-.program-structure .section::before { top: 0 }
+.program-structure .section::before { top: 0; height: 35rem; }
 .program-structure .section::after  { bottom: 0; transform: rotate(180deg) }
 
 .program-structure .box {
@@ -249,7 +249,7 @@
   }
 
   .program-structure .section {
-    padding-bottom: 26rem;
+    padding-bottom: 32rem;
   }
 
   .program-structure .box {
