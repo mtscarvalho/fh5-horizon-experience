@@ -6,7 +6,6 @@
 
 .hero {
   background: #84A1CD;
-  margin-bottom: -1px;
   overflow: hidden;
   padding: 2rem 1.5rem 0;
   position: relative;
@@ -36,32 +35,27 @@
 }
 
 .hero .logo {
-  max-width: 300px;
+  max-width: 18.75rem;
   margin: 0 auto 1.5rem;
 }
 
+.hero .background,
 .hero .background * {
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0;
-  right: 0;
-  object-fit: cover;
-}
-
-.hero .background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
   inset: 0;
   z-index: 0;
 }
 
+.hero .background * {
+  object-fit: cover;
+}
+
 .hero .foreground {
   min-width: calc(100% + 3rem);
-  left: -1.5rem;
   position: relative;
+  left: -1.5rem;
   z-index: 3;
 }
 
@@ -96,22 +90,17 @@
     right: 0;
   }
 
-  .hero .foreground {
-    position: absolute;
-    min-width: 100%;
+  .hero .foreground,
+  .hero .foreground * {
     width: 100%;
     height: 100%;
     margin: 0;
+    position: absolute;
     inset: 0;
-    z-index: 1;
+    z-index: 0;
   }
 
   .hero .foreground * {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    right: 0;
     object-fit: cover;
   }
 
@@ -128,8 +117,9 @@
 
 .about-the-program {
   background: var(--dark-blue);
+  margin-top: -1px;
   position: relative;
-  z-index: 5;
+  
 }
 
 .about-the-program .section {
@@ -139,12 +129,12 @@
 .about-the-program .scoreboard {
   --size: 10.5rem;
 
-  display: block;
   border-radius: 100%;
-  width: var(--size);
-  height: var(--size);
+  display: block;
   font-size: 3.25rem;
   line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
   margin: auto;
   position: relative;
   z-index: 1;
@@ -177,11 +167,6 @@
   transform: translate3d(0,0,0);
 }
 
-@keyframes rotating {
-  from { transform: rotate(0deg) }
-  to   { transform: rotate(360deg) }
-}
-
 .about-the-program .video {
   background: url(../assets/playground-games.jpg) no-repeat center / cover;
   width: 100%;
@@ -200,6 +185,11 @@
   object-fit: cover;
 }
 
+@keyframes rotating {
+  from { transform: rotate(0deg) }
+  to   { transform: rotate(360deg) }
+}
+
 
 /* 
  * ===================================================
@@ -208,8 +198,6 @@
  */
 
 .program-structure {
-  position: relative;
-  z-index: 2;
 }
 
 .program-structure .section {
@@ -220,7 +208,7 @@
 .program-structure .section::before,
 .program-structure .section::after {
   content: "";
-  background: linear-gradient(0deg, rgba(13, 12, 28, 0) 0%, #0D0C1C 100%);
+  background: linear-gradient(0deg, transparent 0%, var(--dark-blue) 100%);
   width: 100%;
   height: 20.5rem;
   position: absolute;
@@ -243,22 +231,10 @@
   content: "";
   width: calc(100% - 4rem);
   height: calc(100% - 4rem);
-  border: 4px solid white;
+  border: 4px solid var(--white);
   position: absolute;
   top: 2rem;
   left: 2rem;
-}
-
-@media (--phone) {
-  .program-structure .box {
-    padding: 6rem 4rem;
-  }
-  .program-structure .box::after {
-    width: calc(100% - 3rem);
-    height: calc(100% - 3rem);
-    top: 1.5rem;
-    left: 1.5rem;
-  }
 }
 
 .program-structure .requirements li {
@@ -292,11 +268,27 @@
   }
 }
 
+@media (--phone) {
+  .program-structure .box {
+    padding: 6rem 4rem;
+  }
+  
+  .program-structure .box::after {
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+}
+
 /* 
  * ===================================================
  * Etapas do processo seletivo
  * ===================================================
  */
+
+.selective-process {
+}
 
 .selective-process .section {
   background: url(../assets/horizon-map.jpg) no-repeat center / cover;
@@ -322,35 +314,10 @@
 }
 
 .selective-process .section::after {
-  background: linear-gradient(0deg, rgba(13, 12, 28, 0) 0%, #0D0C1C 100%);
+  background: linear-gradient(0deg, transparent 0%, var(--dark-blue) 100%);
   height: 20.5rem;
   position: absolute;
   top: 0;
-}
-
-.selective-process ol {
-  counter-reset: counter;
-}
-
-.selective-process ol > * {
-  counter-increment: counter;
-}
-
-.selective-process ol > *::before {
-  --size: 3.5rem;
-
-  background: var(--cerise);
-  border-radius: 100%;
-  content: counter(counter);
-  display: block;
-  width: var(--size);
-  height: var(--size);
-  font-family: "AmsiProCond", sans-serif;
-  font-size: 1.75rem;
-  font-weight: 900;
-  line-height: var(--size);
-  margin-bottom: 1rem;
-  text-align: center;
 }
 
 @media (--desktop) {
@@ -365,7 +332,7 @@
   }
 
   .selective-process .headline--divider::before,
-  .selective-process ol > *::before {
+  .selective-process .list > *::before {
     margin-left: auto;
     margin-right: auto;
   }
@@ -382,16 +349,34 @@
   z-index: 1;
 }
 
-.cta .section::before {
+.cta .section::before,
+.cta .section::after {
   content: "";
+  position: absolute;
+}
+
+.cta .section::before {
   background: url(../assets/pinata-mascot.jpg) no-repeat center / cover;
   width: 100%;
   height: 100%;
-  position: absolute;
   inset: 0;
   z-index: -1;
   mix-blend-mode: lighten;
   opacity: .5;
+}
+
+.cta .section::after {
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+  border: 4px solid var(--white);
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.cta .content {
+  max-width: 50rem;
+  margin: auto;
 }
 
 .cta .headline--divider::before {
@@ -405,8 +390,19 @@
 }
 
 @media (--phone) {
+  .cta .section {
+    padding: 6rem 3rem;
+  }
+
   .cta .section::before {
     background: url(../assets/pinata-mascot-768px.jpg) no-repeat center / cover;
+  }
+
+  .cta .section::after {
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+    top: 1.5rem;
+    left: 1.5rem;
   }
 }
 

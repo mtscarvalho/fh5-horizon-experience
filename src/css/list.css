@@ -11,6 +11,37 @@
  * Checkmark style.
  */
 
+.list--ordered {
+  counter-reset: counter;
+}
+
+.list--ordered > * {
+  counter-increment: counter;
+  margin-top: 0;
+}
+
+.list--ordered > *::before {
+  --size: 3.5rem;
+
+  background: var(--cerise);
+  border-radius: 100%;
+  content: counter(counter);
+  display: block;
+  width: var(--size);
+  height: var(--size);
+  font-family: "AmsiProCond", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: var(--size);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
+/*
+ * Checkmark style.
+ */
+
 .list--checkmark > * {
   padding-left: 2em;
 }
