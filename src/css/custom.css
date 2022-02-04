@@ -201,8 +201,21 @@
 }
 
 .program-structure .section {
-  background: url(../assets/jennifer-delle-monache-fh5-nighttimesky.jpg) no-repeat center / cover;
   z-index: 1;
+}
+
+.program-structure .background,
+.program-structure .background * {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.program-structure .background * {
+  object-fit: cover;
 }
 
 .program-structure .section::before,
@@ -219,6 +232,8 @@
 
 .program-structure .section::before { top: 0; height: 35rem; }
 .program-structure .section::after  { bottom: 0; transform: rotate(180deg) }
+
+
 
 .program-structure .box {
   background: var(--forza-gradient);
@@ -319,9 +334,22 @@
   top: 0;
 }
 
+.selective-process .background,
+.selective-process .background * {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.selective-process .background * {
+  object-fit: cover;
+}
+
 @media (--desktop) {
   .selective-process .section {
-    background: url(../assets/horizon-map.jpg) no-repeat center / cover;
     padding: 10rem 1.5rem 15rem;
   }
 }
@@ -329,10 +357,6 @@
 @media (--phone) {
   .selective-process {
     text-align: center;
-  }
-
-  .selective-process .section {
-    background: url(../assets/horizon-map-768px.jpg) no-repeat center / cover;
   }
 
   .selective-process .headline--divider::before,
