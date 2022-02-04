@@ -22,7 +22,7 @@ ScrollTrigger.matchMedia({
       yPercent: -50,
       ease: "none",
       scrollTrigger: {
-        trigger: ".hero",
+        trigger: "#hero",
         start: "center bottom",
         scrub: true
       }, 
@@ -37,8 +37,8 @@ gsap.from("[data-number]", {
     textContent: 1
   },
   scrollTrigger: {
-    trigger: ".about-the-program",
-    start: "30rem center",
+    trigger: "[data-scoreboard]",
+    start: "top center",
   },
   stagger: {
     each: 1.0,
