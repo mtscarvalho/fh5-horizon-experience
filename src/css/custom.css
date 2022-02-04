@@ -291,7 +291,6 @@
 }
 
 .selective-process .section {
-  background: url(../assets/horizon-map.jpg) no-repeat center / cover;
   z-index: 1;
 }
 
@@ -322,6 +321,7 @@
 
 @media (--desktop) {
   .selective-process .section {
+    background: url(../assets/horizon-map.jpg) no-repeat center / cover;
     padding: 10rem 1.5rem 15rem;
   }
 }
@@ -329,6 +329,10 @@
 @media (--phone) {
   .selective-process {
     text-align: center;
+  }
+
+  .selective-process .section {
+    background: url(../assets/horizon-map-768px.jpg) no-repeat center / cover;
   }
 
   .selective-process .headline--divider::before,
