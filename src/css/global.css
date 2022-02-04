@@ -42,6 +42,10 @@ strong {
   font-weight: 700;
 }
 
+a {
+  color: inherit;
+}
+
 svg {
   width: 100%;
   vertical-align: middle;
