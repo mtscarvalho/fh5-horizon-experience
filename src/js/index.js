@@ -32,7 +32,8 @@ ScrollTrigger.matchMedia({
 
 gsap.from("[data-number]", {
   textContent: 0,
-  duration: 2,
+  duration: 2.5,
+  ease: "power4.out",
   snap: {
     textContent: 1
   },
@@ -41,7 +42,7 @@ gsap.from("[data-number]", {
     start: "top center",
   },
   stagger: {
-    each: 1.0,
+    each: 2.0,
     onUpdate: function() {
       this.targets()[0].innerHTML = this.targets()[0].textContent;
     },
