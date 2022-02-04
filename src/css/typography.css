@@ -39,11 +39,7 @@
  */
 
 .text-small {
-  font-size: 0.875rem;
-}
-
-.text-lead {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .text-center {

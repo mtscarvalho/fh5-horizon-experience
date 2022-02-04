@@ -22,7 +22,7 @@ body {
   background: var(--dark-blue);
   color: var(--white);
   font-family: "AmsiPro", sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 1.5;
 }
 
