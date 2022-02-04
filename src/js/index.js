@@ -32,7 +32,7 @@ ScrollTrigger.matchMedia({
 
 gsap.from("[data-number]", {
   textContent: 0,
-  duration: 2.5,
+  duration: 2,
   ease: "power4.out",
   snap: {
     textContent: 1
@@ -42,7 +42,7 @@ gsap.from("[data-number]", {
     start: "top center",
   },
   stagger: {
-    each: 2.0,
+    each: 1.25,
     onUpdate: function() {
       this.targets()[0].innerHTML = this.targets()[0].textContent;
     },
@@ -56,11 +56,11 @@ const tl = gsap.timeline({
   }
 });
 
-gsap.set(".teste", {opacity: 0});
-tl.to(".teste-1", {opacity: 1})
-  .to(".teste-2", {opacity: 1})
-  .to(".teste-3", {opacity: 1})
-  .to(".teste-4", {opacity: 1})
+gsap.set(".selective-process li", {opacity: 0});
+tl.to(".selective-process li:nth-child(1)", {opacity: 1})
+  .to(".selective-process li:nth-child(2)", {opacity: 1})
+  .to(".selective-process li:nth-child(3)", {opacity: 1})
+  .to(".selective-process li:nth-child(4)", {opacity: 1})
 
 
 
