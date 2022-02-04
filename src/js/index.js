@@ -39,7 +39,7 @@ gsap.from("[data-number]", {
   },
   scrollTrigger: {
     trigger: "[data-scoreboard]",
-    start: "top center",
+    start: "top bottom",
   },
   stagger: {
     each: 1.25,
